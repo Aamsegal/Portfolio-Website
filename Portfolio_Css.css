@@ -21,6 +21,8 @@ html, body {
 
 .head-icon {
     display: block;
+    width: 40%;
+    height: 40%;
 }
 
 .about-me-container {
@@ -32,12 +34,19 @@ html, body {
 }
 
 .portfolio-divider {
-        position: relative;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 40px;
-        border-top: 2px solid black;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-top: 2px solid black;
+    width:90%;
+}
+
+.portfolio-piece {
+    margin-left: auto;
+    margin-right: auto;
+    /*Centers the portfolio container*/
 }
 
 div.portfolio-divider h1 {
@@ -74,6 +83,10 @@ div.portfolio-piece button {
     margin: auto;
 }
 
+.contact-container-desktop {
+    display: none;
+}
+
 @media screen and (max-width: 520px) {
     .navbar-name {
         font-size: 20px;
@@ -87,8 +100,6 @@ div.portfolio-piece button {
     }
 
     .head-icon{
-        width: 40%;
-        height: 40%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 40px;
@@ -105,15 +116,6 @@ div.portfolio-piece button {
         margin: 2px;
     }
 
-    .portfolio-divider {
-        width: 90%;
-    }
-
-    .portfolio-piece {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     div.portfolio-piece img {
         height: 70%;
         width: 70%;
@@ -126,10 +128,15 @@ div.portfolio-piece button {
     div.portfolio-piece p {
         margin-left: 10%;
         margin-right: 10%;
+        text-align: left;
     }
 
     div.portfolio-piece button {
         width: 50%;
+    }
+
+    div.portfolio-piece button p{
+        text-align: center;
     }
 
     .contact {
@@ -168,6 +175,181 @@ div.portfolio-piece button {
 
     div.contact a {
         font-size: 20px;
-        
     }
+}
+
+@media screen and (min-width: 520px) and (max-width: 1024px) {
+    .navbar-name {
+        font-size: 25px;
+        bottom: -0px;
+        left: 10%;
+    }
+
+    .head-icon{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+
+    .about-me-container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    .about-me-text {
+        margin: 2px;
+    }
+
+    div.portfolio-piece img {
+        height: 80%;
+        width: 80%;
+    }
+
+    div.portfolio-piece p {
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: left;
+    }
+
+    div.portfolio-piece button {
+        width: 60%;
+    }
+
+    div.portfolio-piece button p{
+        text-align: center;
+    }
+
+    .contact {
+        position: relative;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        border-top: 2px solid black;
+        width: 90%;
+    }
+
+    div.contact h1 {
+        display: inline;
+        position: relative;
+        top: -.65em;
+        background: white;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    div.contact img {
+        width: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    div.contact p {
+        display: block;
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    div.contact a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .navbar-name {
+        font-size: 35px;
+        bottom: 15px;
+        left: 10%;
+    }
+
+    .head-icon{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-me-container {
+        width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+
+    .about-me-text {
+        margin: 2px;
+    }
+
+    .portfolio-divider{
+        margin-top: 100px;
+        width: 900px;
+    }
+
+    div.portfolio-piece img {
+        margin-bottom: -15px;
+        width: 600px;
+    }
+
+    .text-container {
+        width: 700px;
+    }
+
+    div.portfolio-piece p {
+        text-align: left;
+    }
+
+    div.portfolio-piece button {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 300px;
+    }
+
+    div.portfolio-piece button p{
+        text-align: center;
+    }
+
+    .contact {
+        position: relative;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        border-top: 2px solid black;
+        width: 900px;
+    }
+
+    div.contact h1 {
+        display: inline;
+        position: relative;
+        top: -.65em;
+        background: white;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    div.contact img {
+        width: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    div.contact p {
+        display: block;
+        font-size: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    div.contact a {
+        font-size: 20px;
+    }
+
 }
