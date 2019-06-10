@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Aaron Segal Portfolio</title>
-    <link href="Portfolio_Css.css" rel="stylesheet" type="text/css" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -14,6 +14,14 @@
 
         <h1 class = "navbar-name">Aaron Segal</h1>
 
+        <ul class="navigation">
+          <li><a class="jumper" href="#Home" style="color: #b0ffa5;">Home</a></li>
+
+          <li><a class="jumper" href="#Portfolio" style="color: #b0ffa5;">Portfolio</a></li>
+          
+          <li><a class="jumper" href="#Contact" style="color: #b0ffa5;">Contact</a></li>
+
+        </ul>
         <!--<button class = "burger-button" type="button" data-toggle="collaspe">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png">
         </button>-->
@@ -22,7 +30,7 @@
 
     </div>
 
-    <div class = "about-me">
+    <div id="Home" class = "about-me">
       <img class="head-icon" src="http://cdn.onlinewebfonts.com/svg/img_324089.png" alt="head icon">
 
       <div class="about-me-container">
@@ -35,7 +43,7 @@
       </div>
     </div>
 
-    <div class = "portfolio-divider">
+    <div id="Portfolio" class = "portfolio-divider">
       <!--<div class="divider"></div>-->
       <h1>Portfolio</h1>
     </div>
@@ -43,10 +51,8 @@
     <div class = "portfolio-piece one">
       <img src="https://www.syncron.com/wp-content/uploads/2017/03/img-placeholder.png" alt="placeholder image">
 
-      <h1>Animal Quiz</h1>
-
       <div class="text-container">
-        <p>I developed a small website where users can take a quiz about animals. After answering all the questions, they can see what
+        <p>Users can take a quiz about animals. After answering all the questions, they can see what
           they got right and wrong and then can take the quiz again.
         </p>
       </div>
@@ -57,38 +63,34 @@
 
     </div>
 
-    <div class = "contact">
-      <h1>Contact</h1>
-      <div class="contact-container">
+    <div id="Contact" class="contact-container">
+      <div class = "contact">
+        <h1>Contact</h1>
+        <div class="contact-container">
 
-        <a href="https://duckduckgo.com/"><img src="http://icons.iconarchive.com/icons/danleech/simple/1024/linkedin-icon.png"></button>
+          <a href="https://duckduckgo.com/"><img src="http://icons.iconarchive.com/icons/danleech/simple/1024/linkedin-icon.png"></a>
+          
+          <a href="https://duckduckgo.com/"><img src="https://maxcdn.icons8.com/Share/icon/p1em/Logos/github1600.png"></a>
         
-        <a href="https://duckduckgo.com/"><img src="https://maxcdn.icons8.com/Share/icon/p1em/Logos/github1600.png"></a>
-      
-      </div>
-      
-    </div>
-
-    <div class = "contact">
-      <h1>Address</h1>
-      <div>
-        <p>1363 Saint Francis Way, Milwaukee, Wisconsin, 53226</p>
-      </div>
-    </div>
-
-    <div class = "contact">
-        <h1>Email</h1>
-        <div>
-          <a href="mailto:amsegal93@gmail.com">Amsegal93@gmail.com</a>
+          <a href="mailto:amsegal93@gmail.com"><img src="http://icons.iconarchive.com/icons/iynque/ios7-style/1024/Mail-icon.png"></a>
         </div>
-    </div>
 
-    <div class = "contact">
-        <h1>Phone</h1>
-        <div>
-          <p>(857)-636-9288</p>
-        </div>
-    </div>
+      </div>
+
+      <!--<div class = "contact">
+          <h1>Email</h1>
+          <div>
+            
+          </div>
+      </div>
+
+      <div class = "contact">
+          <h1>Phone</h1>
+          <div>
+            
+          </div>
+      </div>
+    </div>-->
 
 
     <script src="Portfolio_Js.js"></script>
