@@ -3,6 +3,12 @@ html, body {
     padding: 0;
     /*background: #181818;*/
 }
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .navbar{
     position: relative;
     background: #181818;
@@ -17,6 +23,10 @@ html, body {
     display: inline-block;
     position: relative;
     color: #ffffff;
+}
+
+.navigation {
+    display: none;
 }
 
 .head-icon {
@@ -265,6 +275,21 @@ div.portfolio-piece button {
         font-size: 35px;
         bottom: 15px;
         left: 10%;
+    }
+
+    .navigation {
+        display: inline;
+        text-align: right;
+        float: right;
+        text-decoration: none;
+    }
+
+    ul.navigation li {
+        display: inline;
+        padding-right: 30px;
+        bottom: -15px;
+        list-style-type: none;
+        text-decoration: none;
     }
 
     .head-icon{
