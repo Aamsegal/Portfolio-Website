@@ -61,9 +61,7 @@ html, body {
     display: none;
 }
 
-
 .head-icon {
-    background: gray;
     display: block;
     width: 40%;
     height: 40%;
@@ -74,10 +72,12 @@ html, body {
 }
 
 .about-me-text {
-    text-align: left;
-    background: #e5e5e5;
-    height: 500px;
-    /*delete height and background after wireframe assignment*/
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.portfolio-piece p {
+    font-family: 'Roboto', sans-serif;
 }
 
 .portfolio-divider {
@@ -88,6 +88,7 @@ html, body {
     margin-top: 40px;
     border-top: 2px solid black;
     width:90%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .portfolio-piece {
@@ -115,6 +116,10 @@ div.portfolio-piece .text-container{
     margin-right: auto;
 }
 
+.portfolio-text {
+    text-align: center;
+}
+
 div.portfolio-piece img {
     display: block;
     margin-left: auto;
@@ -130,9 +135,8 @@ div.portfolio-piece button {
     margin: auto;
 }
 
-.contact-container {
-    background: gray;
-    height: 100px;
+.contact h1 {
+    font-family: 'Roboto', sans-serif;
 }
 
 .contact-container-desktop {
@@ -154,7 +158,8 @@ div.portfolio-piece button {
     .head-icon{
         margin-left: auto;
         margin-right: auto;
-        margin-top: 40px;
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
 
     .about-me-container {
@@ -162,13 +167,15 @@ div.portfolio-piece button {
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
+        font-size: 18px;
     }
 
     .about-me-text {
-        margin: 2px;
+        margin-top: 20px;
     }
 
     div.portfolio-piece img {
+        margin-top: 20px;
         height: 70%;
         width: 70%;
     }
@@ -178,9 +185,12 @@ div.portfolio-piece button {
     }
 
     div.portfolio-piece p {
-        margin-left: 10%;
-        margin-right: 10%;
-        text-align: left;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .text-container p {
+        margin-top: 20px;
     }
 
     div.portfolio-piece button {
@@ -247,22 +257,23 @@ div.portfolio-piece button {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 50px;
+        margin-top: 0px;
+        font-size: 20px;
     }
 
     .about-me-text {
-        margin: 2px;
+        margin-top: 20px;
+        
     }
 
     div.portfolio-piece img {
+        margin-top: 30px;
         height: 80%;
         width: 80%;
     }
 
     div.portfolio-piece p {
-        margin-left: 10%;
-        margin-right: 10%;
-        text-align: left;
+        font-size: 20px;
     }
 
     div.portfolio-piece button {
@@ -359,11 +370,12 @@ div.portfolio-piece button {
         width: 600px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 50px;
+        margin-top: 70px;
+        font-size: 22px;
     }
 
     .about-me-text {
-        margin: 2px;
+        margin-top: 0px;
     }
 
     .portfolio-divider{
@@ -371,17 +383,20 @@ div.portfolio-piece button {
         width: 900px;
     }
 
+    div.portfolio-piece p {
+        font-size: 22px;
+    }
+
     div.portfolio-piece img {
+        margin-top: 40px;
         margin-bottom: -15px;
         width: 600px;
     }
 
     .text-container {
         width: 700px;
-    }
-
-    div.portfolio-piece p {
-        text-align: left;
+        margin-top: 40px;
+        font-size: 22px;
     }
 
     div.portfolio-piece button {
