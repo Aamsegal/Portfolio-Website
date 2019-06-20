@@ -19,9 +19,15 @@ html, body {
     text-decoration: none;
 }
 
+.drop-Button {
+    background-color: #FFFFFF;
+    z-index: 5;
+}
+
 .drop-Button img {
+    vertical-align: middle;
     width: 20px;
-    margin: 0;
+    background-color: white;
 }
 
 .drop-Content {
@@ -29,7 +35,8 @@ html, body {
     position: absolute;
     right: 0px;
     z-index: 5;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
+    border: 1px solid black;
 }
 
 .drop-Content a {
@@ -52,7 +59,10 @@ html, body {
 }
 
 .navbar-name {
-    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    margin: 0;
+    display: inline;
     position: relative;
     color: #ffffff;
 }
@@ -73,10 +83,17 @@ html, body {
     text-align: center;
 }
 
-.about-me-text {
+.about-me-header {
     margin-top: 20px;
     list-style: none;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-me-text {
+    margin-top: 20px;
+    list-style: none;
+    text-align: left;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -111,6 +128,7 @@ html, body {
 }
 
 .portfolio-piece h1 {
+    margin: 0;
     display: block;
     text-align: center;
 }
@@ -160,8 +178,13 @@ html, body {
 }
 
 .links a:hover {
+    cursor: pointer;
     text-decoration: underline;
-    color: rgb(100, 100, 100);
+    background-color: rgb(189, 189, 189);
+}
+
+.icon-links a:hover {
+    cursor: pointer;
 }
 
 .portfolio-piece header {
@@ -169,13 +192,20 @@ html, body {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     margin-top: 20px;
+}
 
+.jumper {
+    color: white;
+}
+
+.jumper:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
 }
 
 @media screen and (max-width: 520px) {
     .navbar-name {
         font-size: 20px;
-        bottom: -10px;
         left: 5%;
     }
 
@@ -200,7 +230,7 @@ html, body {
     }
 
     .portfolio-piece img {
-        margin-top: 20px;
+        margin-top: 10px;
         height: 70%;
         width: 70%;
     }
@@ -248,6 +278,11 @@ html, body {
         padding-right: 10px;
     }
 
+    .icon-links a {
+        width: 25%;
+        height: 25%;
+    }
+
     .contact img {
         width: 20%;
         margin-left: 10px;
@@ -290,7 +325,7 @@ html, body {
     }
 
     .portfolio-piece img {
-        margin-top: 30px;
+        margin-top: 20px;
         height: 80%;
         width: 80%;
     }
@@ -372,24 +407,28 @@ html, body {
     }
 
     .navbar-name {
+        box-sizing: border-box;
+        vertical-align: middle;
         font-size: 35px;
-        bottom: 15px;
         left: 10%;
     }
 
     .navigation {
         display: inline;
-        text-align: right;
-        float: right;
+        float: inline-end;
+        list-style-type: none;
         text-decoration: none;
     }
 
     ul.navigation li {
+
         display: inline;
         padding-right: 30px;
         bottom: -15px;
+        right: 20%;
         list-style-type: none;
         text-decoration: none;
+
     }
 
     .about-me {
@@ -421,7 +460,7 @@ html, body {
     }
 
     .portfolio-piece img {
-        margin-top: 40px;
+        margin-top: 20px;
         margin-bottom: -15px;
         width: 600px;
     }
@@ -474,10 +513,6 @@ html, body {
         margin-right: 10%;
         margin-top: 0px;
         margin-bottom: 20px;
-    }
-
-    .contact a {
-        font-size: 20px;
     }
 
     .links a, p {
