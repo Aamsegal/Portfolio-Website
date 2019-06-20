@@ -20,6 +20,7 @@ html, body {
 }
 
 .drop-Button {
+    border: 2px solid #181818;
     background-color: #FFFFFF;
     z-index: 5;
 }
@@ -102,13 +103,13 @@ html, body {
 }
 
 .portfolio-divider {
-    position: relative;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-    border-top: 2px solid black;
+    border-bottom: 2px solid black;
     width:90%;
+    top: -.5;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -119,10 +120,9 @@ html, body {
 }
 
 .portfolio-divider h1 {
+    z-index: 1;
     display: inline;
-    position: relative;
-    top: -.65em;
-    background: white;
+    padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -415,7 +415,7 @@ html, body {
 
     .navigation {
         display: inline;
-        float: inline-end;
+        float: right;
         list-style-type: none;
         text-decoration: none;
     }
